@@ -6,22 +6,20 @@ public class ball : MonoBehaviour
 {
     private Rigidbody rb;
     public float ballthrust;
-
+    public Vector3 vec3;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * ballthrust, ForceMode.Force);
 
-        new Vector3(0, 0, 1);
-        rb.AddForce(transform.forward * ballthrust, ForceMode.Acceleration);
+        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+   
 }
+
