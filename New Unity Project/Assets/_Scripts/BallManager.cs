@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {
     public static BallManager instance;
-    private List<int> potentialAngles = new List<int> { 45, 90, 180, 270 };
+    private List<int> potentialAngles = new List<int> { 30, 45, 100, 270 };
 
     public GameObject ball;
 
